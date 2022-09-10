@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+ <title>Creación de objetos</title>
+ <link rel="stylesheet" type="text/css" href="ejercicio2.css">
+ <meta charset="utf-8" />
+ </head>
+<body>
+ <div class="container">
+ <div class="row">
+ <div class="sub1">
+ <h1 class="text-center">Información del libro</h1>
+ </div>
+ </div>
+ <div class="row">
+ <div class="col col-sm-12">
+ <form action="javascript:void(0)" name="frmbook" id="frmbook" class="col s12">
+ <div class="input-group mb-4">
+ <div class="input-group-prepend">
+ <div class="input-group-text"><i class="bi bi-file-earmarkperson"></i></div>
+ </div>
+ </div>
+ <div class="input-group mb-4">
+ <div class="input-group-prepend">
+ <div class="input-group-text"><i class="bi bi-book"></i></div>
+ </div>
+ <div class="sub_container">
+<label>ingrese el titulo</label>
+ <input type="text" placeholder="Ingrese Titulo de la obra" class="form-control" name="txttitulo" id="titulo" maxlength="90" />
+ <label>ingrese el nombre del autor</label>
+ <input type="text" placeholder="Ingrese el nombre del autor" class="form-control" name="txtnombreAutor"  id="nombreAutor"> 
+ <label>ingrese el apellido del autor</label>
+ <input type="text" placeholder="Ingrese el apellido del autor" class="form-control" name="txtapeAutor"  id="apeAutor"> 
+ <label>ingrese la categoria</label>
+ <input type="text" placeholder="Ingrese la categoria" class="form-control" name="txtcategoria"  id="categoria"> 
+ <label>ingrese el precio</label>
+ <input type="text" placeholder="Ingrese el precio" class="form-control" name="txtprecio"  id="precio"> 
+ </div>
+ </div>
+ <div class="input-group mb-4">
+ <div class="input-group-prepend">
+ <div class="input-group-text"><i class="bi bi-sort-numeric-up"></i></div>
+ </div>
+ </div>
+ <div class="input-group mb-4">
+ <div class="input-group-prepend">
+ <div class="input-group-text"><i class="bi bi-geo-alt-fill"></i></div>
+ </div>
+ </div>
+ <div class="d-flex">
+ <button type="submit" name="mostrar" id="mostrar" class="btn btn-success w-25 col-md-12">Enviar</button>
+ </div>
+ </form>
+ </div>
+ </div>
+ <br>
+ <div class="row">
+ <hr>
+ <div class="puntual">
+ <h1 class="text-center">Lista autores</h1>
+ <table class="table table-hover">
+ <thead>
+ <tr>
+ <th>Id</th>
+ <th>Titulo</th>
+ <th>Autor</th>
+ <th>apellido</th>
+ <th>categoria</th>
+ <th>precio</th>
+ <th>Operaciones</th>
+ </tr>
+</div>
+ </thead>
+ <tbody id="infolibro">
+ </tbody>
+ </table>
+ </div>
+ </div>
+</body>
+<script src="ejercicio2.js"></script>
+</html>
